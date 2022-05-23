@@ -29,8 +29,10 @@ const NavBar = () => {
       <header>
         <nav>
           <ul>
+            <li>Stephanie Ugboaja</li>
             {links.map((link) => (
-              <li key={link.id}>{link.text}</li>
+              <li key={link.id}>
+                <NavLink to={link.path} exact>{link.text}</NavLink></li>
             ))}
           </ul>
         </nav>
