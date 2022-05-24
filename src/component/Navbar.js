@@ -27,9 +27,11 @@ const NavBar = () => {
   return (
     <>
       <header>
-        <nav>
-          <ul>
-            <li>Stephanie Ugboaja</li>
+        <nav className="nav">
+          <div>
+            <h3>Stephanie Ugboaja</h3>
+          </div>
+          <ul className="header-ul">
             {links.map((link) => (
               <li key={link.id}>
                 <NavLink to={link.path} exact>{link.text}</NavLink></li>

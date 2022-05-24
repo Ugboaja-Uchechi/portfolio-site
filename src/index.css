@@ -4,8 +4,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Header - Navigation Styling */
+
+header {
+  background-color: #f2ebf3;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: calc(0.3rem + 1vw);
+}
+
+.header-ul {
+  display: flex;
+  align-items: center;
+}
+
+.header-ul li {
+  list-style-type: none;
+  padding-inline-end: clamp(1.5rem,  6%,   3rem);
+  /* padding-left: clamp(1.5rem,  6%,   3rem); */
+}
+
+/* Header - Navigation Styling End */
+
+h1 {
+  font-size: calc(1.5rem + 3vw);
 }
