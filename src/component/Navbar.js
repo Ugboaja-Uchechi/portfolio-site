@@ -29,7 +29,7 @@ const NavBar = () => {
       <header>
         <nav className="nav">
           <div>
-            <h3>Stephanie Ugboaja</h3>
+            <h3 className="header-name">Stephanie Ugboaja</h3>
           </div>
           <ul className="header-ul">
             {links.map((link) => (

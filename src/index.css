@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
+:root {
+  --black: #28282a;
+  --shadeOfViolet: #f2ebf3;
+  --shadeOfRed: #f79292;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,13 +20,21 @@ body {
 /* Header - Navigation Styling */
 
 header {
-  background-color: #f2ebf3;
+  background-color: rgb(243,232,243);
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
   font-size: calc(0.3rem + 1vw);
+  padding-block-start: min(2rem, 4vh);
+  padding-block-end: min(2rem, 4vh);
+  color: var(--black);
+}
+
+.header-name:hover {
+  color: lightcoral;
+  transition: all 0.2s ease;
 }
 
 .header-ul {
@@ -32,6 +46,22 @@ header {
   list-style-type: none;
   padding-inline-end: clamp(1.5rem,  6%,   3rem);
   /* padding-left: clamp(1.5rem,  6%,   3rem); */
+}
+
+.header-ul li a {
+  color: var(--black);
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.header-ul li a:hover {
+  border: 2px dashed var(--shadeOfRed);
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+  padding-inline-end: 0.5rem;
+  padding-inline-start: 0.5rem;
 }
 
 /* Header - Navigation Styling End */
