@@ -18,6 +18,10 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+body::selection {
+  background-color: navajowhite;
+}
+
 /* Header - Navigation Styling */
 
 header {
@@ -91,5 +95,42 @@ span {
   color: var(--textCover);
 }
 
+#main p {
+  border-block: 2px dashed var(--shadeOfRed);
+  border-inline: 2px dashed var(--shadeOfRed);
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+  padding-inline-end: 0.5rem;
+  padding-inline-start: 0.5rem;
+}
+
 
 /* Main Styling End */
+
+/* About Styling */
+
+.about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--shadeOfPink);
+}
+
+.headings {
+  font-size: calc(1rem + 2vw);
+}
+
+.width {
+  width: calc(5em * 5);
+}
+
+.margin-end {
+  margin-inline-end: 2.5rem;
+}
+
+.margin-start {
+  margin-inline-start: 2.5rem;
+}
+
+/* About Styling End */
