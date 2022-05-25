@@ -2,8 +2,9 @@
 
 :root {
   --black: #28282a;
-  --shadeOfViolet: #f2ebf3;
-  --shadeOfRed: #f79292;
+  --shadeOfPink: #f8edeb;
+  --shadeOfRed: #f25c54;
+  --textCover: #ef476f;
 }
 
 * {
@@ -20,7 +21,8 @@ body {
 /* Header - Navigation Styling */
 
 header {
-  background-color: rgb(243,232,243);
+  background-color: var(--shadeOfPink);
+  height: 13vh;
 }
 
 .nav {
@@ -33,7 +35,7 @@ header {
 }
 
 .header-name:hover {
-  color: lightcoral;
+  color: var(--shadeOfRed);
   transition: all 0.2s ease;
 }
 
@@ -54,10 +56,12 @@ header {
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .header-ul li a:hover {
-  border: 2px dashed var(--shadeOfRed);
+  border-block: 2px dashed var(--shadeOfRed);
+  border-inline: 2px dashed var(--shadeOfRed);
   padding-block-start: 0.5rem;
   padding-block-end: 0.5rem;
   padding-inline-end: 0.5rem;
@@ -66,6 +70,26 @@ header {
 
 /* Header - Navigation Styling End */
 
+/* Main Styling */
+
+#main {
+  height: 87vh;
+  /* padding-inline-start: 5rem;
+  padding-inline-end: 5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--shadeOfPink);
+}
+
 h1 {
   font-size: calc(1.5rem + 3vw);
+  width: calc(2em * 5);
 }
+
+span {
+  color: var(--textCover);
+}
+
+
+/* Main Styling End */
