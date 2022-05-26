@@ -1,0 +1,55 @@
+import React from "react";
+import VacayImage from "../images/prof-image.jpg";
+import SpaceImage from "../images/prof-image.jpg";
+import IpImage from "../images/prof-image.jpg";
+const Projects = () => {
+  return (
+    <>
+      <section>
+        <div>
+          <h2 className="headings">Selected <span>Projects</span></h2>
+        </div>
+        <div className="grid-container">
+          <div>
+            <div>
+              <img src={VacayImage} alt="A girl smiling" className="width margin-start"></img>
+            </div>
+            <div>
+              <h3>Vacay Home</h3>
+              <p></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src={SpaceImage} alt="A girl smiling" className="width margin-start"></img>
+            </div>
+            <div>
+              <h3>Space-X Hub</h3>
+              <p></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src={IpImage} alt="A girl smiling" className="width margin-start"></img>
+            </div>
+            <div>
+              <h3>IP Address Tracker</h3>
+              <p></p>
+            </div>
+          </div>
+          <div>
+            <div>
+
+            </div>
+            <div>
+              <h3>URL Shortening API</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+export default Projects;
