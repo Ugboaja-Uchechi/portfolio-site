@@ -1,7 +1,8 @@
 import React from "react";
-import VacayImage from "../images/prof-image.jpg";
-import SpaceImage from "../images/prof-image.jpg";
-import IpImage from "../images/prof-image.jpg";
+import VacayImage from "../images/vacay.png";
+import SpaceImage from "../images/space-x.png";
+import IpImage from "../images/ip-tracker.png";
+
 const Projects = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const Projects = () => {
           <h2 className="headings">Selected <span>Projects</span></h2>
         </div>
         <div className="grid-container">
-          <div>
+          <div id="grid-column-2">
             <div>
               <img src={VacayImage} alt="A girl smiling" className="width margin-start"></img>
             </div>
@@ -19,7 +20,7 @@ const Projects = () => {
               <p></p>
             </div>
           </div>
-          <div>
+          <div id="grid-column-3">
             <div>
               <img src={SpaceImage} alt="A girl smiling" className="width margin-start"></img>
             </div>
@@ -28,7 +29,7 @@ const Projects = () => {
               <p></p>
             </div>
           </div>
-          <div>
+          <div id="grid-row-3">
             <div>
               <img src={IpImage} alt="A girl smiling" className="width margin-start"></img>
             </div>

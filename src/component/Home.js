@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./Navbar";
 import About from "./About";
+import Projects from "./Projects";
 import Contact from "./Contact";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <p>I am a developer, I build websites and bring ideas to life with code</p>
       </main>
       <About />
+      <Projects />
       <Contact />
     </>
   )
