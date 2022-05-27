@@ -2,11 +2,12 @@ import React from "react";
 import VacayImage from "../images/vacay.png";
 import SpaceImage from "../images/space-x.png";
 import IpImage from "../images/ip-tracker.png";
+import UrlImage from "../images/url-shortening.png";
 
 const Projects = () => {
   return (
     <>
-      <section>
+      <section className="height">
         <div>
           <h2 className="headings">Selected <span>Projects</span></h2>
         </div>
@@ -38,9 +39,9 @@ const Projects = () => {
               <p></p>
             </div>
           </div>
-          <div>
+          <div id="grid-row-4">
             <div>
-
+              <img src={UrlImage} alt="" className="width margin-start" />
             </div>
             <div>
               <h3>URL Shortening API</h3>

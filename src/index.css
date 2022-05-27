@@ -18,9 +18,9 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-body::selection {
+/* body::selection {
   background-color: navajowhite;
-}
+} */
 
 /* Header - Navigation Styling */
 
@@ -104,6 +104,14 @@ span {
   padding-inline-start: 0.5rem;
 }
 
+h1::selection,
+p::selection,
+span::selection,
+a::selection, 
+h3::selection {
+  background-color: navajowhite;
+}
+
 
 /* Main Styling End */
 
@@ -119,6 +127,7 @@ span {
 
 .headings {
   font-size: calc(1rem + 2vw);
+  text-align: center;
 }
 
 .width {
@@ -137,24 +146,41 @@ span {
 
 /* Project Styling */
 
+/* .height {
+  height: 100vh;
+} */
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
 }
 
 #grid-column-2 {
   grid-column: 2/3;
+  display: flex;
+  /* height: 20vh;*/
 }
 
 #grid-column-3 {
   grid-column: 1/2;
   grid-row: 2/3;
+  display: flex;
+  /* height: 20vh;*/
 }
 
 #grid-row-3 {
   grid-row: 3/4;
   grid-column: 2/3;
+  display: flex;
+  /* height: 20vh;*/
+}
+
+#grid-row-4 {
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  /* height: 20vh;*/
 }
 
 /* Project Styling End */

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
       <footer>
-        <h4>Get in touch.</h4>
+        <h2 className="headings">Get in touch.</h2>
         <p>Wanna work together?, have any question or proposal?, or just want to say Hello. Go ahead. I would love to hear from you!</p>
         <form>
           <label for="name">Name</label>
