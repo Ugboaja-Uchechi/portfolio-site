@@ -214,4 +214,62 @@ p {
   width: calc(5em * 5);
 }
 
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid1 {
+  grid-column: 1/2;
+}
+
+.grid-row1 {
+  grid-row: 1/2;
+}
+
+.grid2 {
+  grid-column: 2/3;
+  /* grid-row: 1/2; */
+}
+
+.grid-row2 {
+  grid-row: 2/3;
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  color: #17C3B2;
+ }
+ 
+ button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  z-index: -1;
+ }
+ 
+ button:hover::before {
+  width: 105%;
+ }
+ 
+ button:hover {
+  color: #111;
+ }
+ 
+
 /* Contact Styling End */
