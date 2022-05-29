@@ -2,9 +2,11 @@
 
 :root {
   --black: #28282a;
-  --shadeOfPink: #f8edeb;
+  --lightTheme: #f8edeb;
   --shadeOfRed: #f25c54;
-  --textCover: #ef476f;
+  --textCover:#ef476f;
+  --darkTheme: #023047;
+  --lightSelection: navajowhite;
 }
 
 * {
@@ -25,17 +27,25 @@ body {
 /* Header - Navigation Styling */
 
 header {
-  background-color: var(--shadeOfPink);
+  background-color: var(--lightTheme);
   height: 13vh;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-size: calc(0.3rem + 1vw);
   padding-block-start: min(2rem, 4vh);
   padding-block-end: min(2rem, 4vh);
   color: var(--black);
+}
+
+.header-name{
+  font-weight: 600;
+  /* Mobile Text
+  font-size: calc(1.5rem + 1vw); */
+  font-size: calc(0.75rem + 0.75vw);
 }
 
 .header-name:hover {
@@ -61,6 +71,7 @@ header {
   transition: all 0.2s ease;
   cursor: pointer;
   font-weight: 600;
+  font-size: calc(0.75rem + 0.75vw);
 }
 
 .header-ul li a:hover {
@@ -83,7 +94,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--shadeOfPink);
+  background-color: var(--lightTheme);
 }
 
 h1 {
@@ -109,7 +120,7 @@ p::selection,
 span::selection,
 a::selection, 
 h3::selection {
-  background-color: navajowhite;
+  background-color: var(--lightSelection);
 }
 
 
@@ -122,7 +133,7 @@ h3::selection {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--shadeOfPink);
+  background-color: var(--lightTheme);
 }
 
 .headings {
@@ -183,4 +194,24 @@ h3::selection {
   /* height: 20vh;*/
 }
 
+img {
+  width: calc(2em * 3);
+}
+
 /* Project Styling End */
+
+/* Contact Styling */
+
+p {
+  /* font-size: clamp(1em, 0.75rem + 0.5vw, 1.2em); */
+  font-weight: 600;
+  font-size: calc(0.5rem + 1vw);
+}
+
+#footer-p {
+  margin: 0 auto;
+  text-align: center;
+  width: calc(5em * 5);
+}
+
+/* Contact Styling End */
