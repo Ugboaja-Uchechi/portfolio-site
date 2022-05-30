@@ -19,7 +19,7 @@ const Contact = () => {
           </div>
           <div className="textarea-flex">
             <label for="message">Message</label> <br />
-            <textarea id="message" for="message" rows="4" cols="50" required></textarea>
+            <textarea id="message" for="message" rows="7" required></textarea>
           </div>
           <div className="textarea-flex">
             <button type="submit" className="grid4">Send a Message</button>
