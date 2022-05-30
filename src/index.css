@@ -76,13 +76,15 @@ header {
   font-size: calc(0.75rem + 0.75vw);
 }
 
-.header-ul li a:hover {
+.header-ul li a:hover,
+.header-ul li a:focus {
   border-block: 2px dashed var(--shadeOfRed);
   border-inline: 2px dashed var(--shadeOfRed);
   padding-block-start: 0.5rem;
   padding-block-end: 0.5rem;
   padding-inline-end: 0.5rem;
   padding-inline-start: 0.5rem;
+  outline: none;
 }
 
 /* Header - Navigation Styling End */
@@ -202,9 +204,13 @@ img {
 
 /* Contact Styling */
 
+footer {
+  height: 100vh;
+}
+
 p {
   /* font-size: clamp(1em, 0.75rem + 0.5vw, 1.2em); */
-  font-weight: 600;
+  font-weight: 400;
   font-size: calc(0.5rem + 1vw);
 }
 
@@ -223,11 +229,39 @@ form {
 
 #input-flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+#margin-inline-end {
+  margin-inline-end: 2rem;
+}
+
+#margin-inline-start {
+  margin-inline-start: 2rem;
+}
+
+#name,
+#email {
+  border-block-start: none;
+  border-inline: none;
+  border-block-end: 2px dashed var(--shadeOfRed);
+  width: calc(4em * 5);
+  background-color: transparent;
+}
+
+#name:focus,
+#email:focus {
+  transition: .2s ease;
+  outline: none;
+  /* border-block-start: none;
+  border-inline: none; */
+  border-block-end: 2px solid var(--shadeOfRed);
+  /* background-color: transparent; */
 }
 
 .textarea-flex {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -235,17 +269,17 @@ form {
 button {
   padding: 0.4em 0.8em;
   font-size: calc(0.5rem + 0.75vw);
-  border: 2px dashed var(--shadeOfRed);
+  border-block: 2px dashed var(--shadeOfRed);
+  border-inline: 2px dashed var(--shadeOfRed);
   background-color: transparent;
   position: relative;
   overflow: hidden;
   text-align: center;
   text-transform: uppercase;
-  transition: .2s;
   color: var(--buttonColor);
- }
+}
  
- button::before {
+button::before {
   content: '';
   width: 0;
   height: 300%;
@@ -253,20 +287,24 @@ button {
   top: 50%;
   left: 50%;
   background-color: var(--shadeOfRed);
-
-  transform: translate(-50%, -50%) rotate(23deg);
+  transform: translate(-50%, -50%) rotate(25deg);
   transition: .7s ease;
   z-index: -1;
- }
+}
  
- button:hover::before {
+button:hover::before,
+button:focus::before {
   width: 100%;
- }
+  outline: none;
+}
  
- button:hover {
+button:hover,
+button:focus {
   color: var(--black);
-  border: 2px solid var(--shadeOfRed);
- }
+  border-block: 2px solid var(--shadeOfRed);
+  border-inline: 2px solid var(--shadeOfRed);
+  outline: none;
+}
  
 
 /* Contact Styling End */

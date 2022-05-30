@@ -8,17 +8,17 @@ const Contact = () => {
         <p id="footer-p">Wanna work together?, have any question or proposal?, or just want to say Hello. Go ahead. I would love to hear from you!</p>
         <form>
           <div id="input-flex">
-            <div>
+            <div id="margin-inline-end">
               <label for="name">Name</label> <br />
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" placeholder="Jane Doe" name="name" required />
             </div>
-            <div>
+            <div id="margin-inline-start">
               <label for="email">Email</label> <br />
               <input type="email" id="email" name="email" required />
             </div>
           </div>
           <div className="textarea-flex">
-            <label for="message">Message</label>
+            <label for="message">Message</label> <br />
             <textarea id="message" for="message" rows="4" cols="50" required></textarea>
           </div>
           <div className="textarea-flex">
