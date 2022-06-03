@@ -19,8 +19,70 @@
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#light {
   background-color: var(--lightTheme);
 }
+
+#dark {
+  background-color: var(--darkTheme);
+}
+
+.switch {
+  /* --moon-mask: ; */
+   font-size: 17px;
+   position: relative;
+   display: inline-block;
+   width: 3.5em;
+   height: 2em;
+    transition: .7s ease;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+   display: none;
+  }
+  
+  /* The slider */
+  .slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #f4f4f5;
+   transition: .7s ease;
+   border-radius: 30px;
+  }
+  
+  .slider:before {
+   position: absolute;
+   content: "";
+   height: 1.4em;
+   width: 1.4em;
+   border-radius: 20px;
+   left: 0.3em;
+   bottom: 0.3em;
+   background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+   transition: .7s ease;
+  }
+  
+  input:checked + .slider {
+   background-color: #303136;
+      transition: .7s ease;
+  }
+  
+  input:checked + .slider:before {
+   transform: translateX(1.5em);
+   background: #303136;
+   box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+      transition: .7s ease;
+  }
 
 /* body::selection {
   background-color: navajowhite;
@@ -29,7 +91,6 @@ body {
 /* Header - Navigation Styling */
 
 header {
-  background-color: var(--lightTheme);
   height: 13vh;
 }
 
@@ -151,6 +212,10 @@ h3::selection {
   margin-inline-end: 2.5rem;
 }
 
+.margin-end p {
+  font-size: calc(0.3rem + 1vw);
+}
+
 .margin-start {
   margin-inline-start: 2.5rem;
 }
@@ -216,7 +281,7 @@ footer {
 p {
   /* font-size: clamp(1em, 0.75rem + 0.5vw, 1.2em); */
   font-weight: 400;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.4rem + 1vw);
 }
 
 #footer-p {
@@ -324,6 +389,7 @@ button:focus {
   border-inline: 2px solid var(--shadeOfRed);
   outline: none;
   cursor: pointer;
+  z-index: 1;
 }
  
 
