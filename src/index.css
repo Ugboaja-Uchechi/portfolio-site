@@ -8,6 +8,8 @@
   --darkTheme: #023047;
   --lightSelection: navajowhite;
   --buttonColor: #d90429;
+  --darkThemeTextColor: #f1faee;
+  --spanDarkThemeTextColor: #fcbf49;
 }
 
 * {
@@ -95,8 +97,9 @@ header {
   position: fixed;
   width: 100%;
   width: -webkit-fill-available;
-  z-index: 6;
+  z-index: 1;
   height: 13vh;
+  background-color: var(--lightTheme);
 }
 
 .nav {
@@ -158,7 +161,7 @@ header {
 /* Main Styling */
 
 #main {
-  height: 87vh;
+  height: 100vh;
   /* padding-inline-start: 5rem;
   padding-inline-end: 5rem; */
   display: flex;
@@ -198,7 +201,6 @@ h3::selection {
 /* About Styling */
 
 .about {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,9 +231,9 @@ h3::selection {
 
 /* Project Styling */
 
-/* .height {
+.height {
   height: 100vh;
-} */
+}
 
 .grid-container {
   display: grid;
@@ -276,7 +278,6 @@ img {
 
 
 footer {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,5 +398,72 @@ button:focus {
   z-index: 1;
 }
  
-
 /* Contact Styling End */
+
+/* Dark Theme Styling */
+
+#dark header {
+  background-color: var(--darkTheme);
+  border-block-end: 1px solid var(--darkThemeTextColor);
+}
+
+#dark,
+#dark .nav,
+#dark .header-ul li a {
+  color: var(--darkThemeTextColor);
+}
+
+#dark .header-ul li a:hover,
+#dark .header-ul li a:focus {
+  border-block: 2px dashed var(--darkThemeTextColor);
+  border-inline: 2px dashed var(--darkThemeTextColor);
+}
+
+#dark #main p {
+  border-block: 2px dashed var(--spanDarkThemeTextColor);
+  border-inline: 2px dashed var(--spanDarkThemeTextColor);
+}
+
+#dark span {
+  color: var(--spanDarkThemeTextColor);
+}
+
+#dark .header-name:hover {
+  color: var(--spanDarkThemeTextColor);
+}
+
+#dark input,
+#dark textarea {
+  color: var(--darkThemeTextColor);
+}
+
+#dark #name,
+#dark #email,
+#dark #message {
+  border-block-end: 2px dashed var(--spanDarkThemeTextColor);
+}
+
+#dark #name:focus,
+#dark #email:focus,
+#dark #message:focus {
+  border-block-end: 2px solid var(--spanDarkThemeTextColor);
+}
+
+#dark button {
+  border-block: 2px dashed var(--spanDarkThemeTextColor);
+  border-inline: 2px dashed var(--spanDarkThemeTextColor);
+  color: var(--darkThemeTextColor);
+}
+
+#dark button::before {
+  background-color: var(--spanDarkThemeTextColor);
+}
+
+#dark button:hover,
+#dark button:focus {
+  color: var(--black);
+  border-block: 2px solid var(--spanDarkThemeTextColor);
+  border-inline: 2px solid var(--spanDarkThemeTextColor);
+}
+
+/* Dark Theme Styling End */

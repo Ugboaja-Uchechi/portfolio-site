@@ -7,7 +7,7 @@ import UrlImage from "../images/url-shortening.png";
 const Projects = () => {
   return (
     <>
-      <section className="height">
+      <section>
         <div>
           <h2 className="headings">Selected <span>Projects</span></h2>
         </div>
