@@ -74,14 +74,14 @@ body {
   
   input:checked + .slider {
    background-color: #303136;
-      transition: .7s ease;
+   transition: .7s ease;
   }
   
   input:checked + .slider:before {
    transform: translateX(1.5em);
    background: #303136;
    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
-      transition: .7s ease;
+   transition: .7s ease;
   }
 
 /* body::selection {
@@ -91,6 +91,11 @@ body {
 /* Header - Navigation Styling */
 
 header {
+  border-block-end: 1px solid pink;
+  position: fixed;
+  width: 100%;
+  width: -webkit-fill-available;
+  z-index: 6;
   height: 13vh;
 }
 
