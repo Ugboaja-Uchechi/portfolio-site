@@ -2,11 +2,11 @@
 
 :root {
   --black: #28282a;
-  --lightTheme: #f8edeb;
+  --lightTheme: #fbf8cc;
   --shadeOfRed: #f25c54;
   --textCover:#ef476f;
   --darkTheme: #023047;
-  --lightSelection: navajowhite;
+  --lightSelection: #ffdead;
   --buttonColor: #d90429;
   --darkThemeTextColor: #f1faee;
   --spanDarkThemeTextColor: #fcbf49;
@@ -21,6 +21,8 @@
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  /* color: #104911; */
+  /* color: #7A1A8B; */
 }
 
 #light {
@@ -32,22 +34,24 @@ body {
 }
 
 .switch {
-  /* --moon-mask: ; */
-   font-size: 17px;
-   position: relative;
-   display: inline-block;
-   width: 3.5em;
-   height: 2em;
-    transition: .7s ease;
-  }
+  font-size: 17px;
+  position: fixed;
+  display: inline-block;
+  top: 1.7em;
+  right: 5em;
+  width: 3.5em;
+  height: 2em;
+  transition: .7s ease;
+  z-index: 2;
+}
   
   /* Hide default HTML checkbox */
-  .switch input {
-   opacity: 0;
-   width: 0;
-   height: 0;
-   display: none;
-  }
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: none;
+}
   
   /* The slider */
   .slider {
@@ -55,19 +59,19 @@ body {
    cursor: pointer;
    top: 0;
    left: 0;
-   right: 0;
-   bottom: 0;
-   background-color: #f4f4f5;
-   transition: .7s ease;
-   border-radius: 30px;
-  }
+  right: 0;
+  bottom: 0;
+  background-color: #f2cc8f;
+  transition: .7s ease;
+  border-radius: 30px;
+ }
   
-  .slider:before {
-   position: absolute;
-   content: "";
-   height: 1.4em;
-   width: 1.4em;
-   border-radius: 20px;
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
    left: 0.3em;
    bottom: 0.3em;
    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
@@ -75,16 +79,16 @@ body {
   }
   
   input:checked + .slider {
-   background-color: #303136;
+   background-color: #f1faee;
    transition: .7s ease;
   }
   
-  input:checked + .slider:before {
-   transform: translateX(1.5em);
-   background: #303136;
-   box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
-   transition: .7s ease;
-  }
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+  transition: .7s ease;
+}
 
 /* body::selection {
   background-color: navajowhite;
@@ -93,7 +97,7 @@ body {
 /* Header - Navigation Styling */
 
 header {
-  border-block-end: 1px solid pink;
+  border-block-end: 1px solid var(--textCover);
   position: fixed;
   width: 100%;
   width: -webkit-fill-available;

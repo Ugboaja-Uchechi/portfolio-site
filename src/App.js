@@ -15,7 +15,7 @@ function App() {
     setTheme((curr) => (curr === "light" ? "dark" : "light" ))
   };
 
-  const Switch = () => {
+const Switch = () => {
     return (
       <label className="switch">
         {theme === "light" ? "Light Mode" : "Dark Mode"}
@@ -27,13 +27,13 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div id={theme}>
+        <Switch />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/contact" element={<Contact />} />
         </Routes> 
-        <Switch />
       </div>
     </ThemeContext.Provider>
   );
