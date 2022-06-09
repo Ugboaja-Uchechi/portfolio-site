@@ -400,6 +400,7 @@ button:focus {
   outline: none;
   cursor: pointer;
   z-index: 1;
+  border-radius: 5px;
 }
  
 /* Contact Styling End */
