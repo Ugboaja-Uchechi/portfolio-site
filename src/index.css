@@ -12,6 +12,11 @@
   --spanDarkThemeTextColor: #fcbf49;
 }
 
+@font-face {
+  font-family: ogg;
+  src: url(font/OggMedium.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +24,11 @@
   line-height: 1.5;
 }
 
-body {
+/* body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  /* color: #104911; */
-  /* color: #7A1A8B; */
-}
+  color: #104911;
+  color: #7A1A8B;
+} */
 
 #light {
   background-color: var(--lightTheme);
@@ -165,30 +170,46 @@ header {
 /* Main Styling */
 
 #main {
-  height: 100vh;
+  height: 105vh;
+  padding-block-start: 5rem;
+  margin-inline-start: 5rem;
   /* padding-inline-start: 5rem;
   padding-inline-end: 5rem; */
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
 h1 {
-  font-size: calc(1.5rem + 3vw);
-  width: calc(2em * 5);
+  /* font-size: calc(1.5rem + 3vw); */
+  font-family: 'ogg', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: calc(6.5rem + 0.75vw);
+  /* width: calc(2em * 5); */
 }
 
 span {
   color: var(--textCover);
 }
 
-#main p {
-  border-block: 2px dashed var(--shadeOfRed);
-  border-inline: 2px dashed var(--shadeOfRed);
+#main-p {
+  /* border-block: 2px dashed var(--shadeOfRed);
+  border-inline: 2px dashed var(--shadeOfRed); */
   padding-block-start: 0.5rem;
   padding-block-end: 0.5rem;
   padding-inline-end: 0.5rem;
   padding-inline-start: 0.5rem;
+}
+
+#main-p2 {
+  text-align: end;
+  /* margin-block-start: 2rem; */
+  margin-inline-end: 3rem;
+  font-family: 'ogg', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: calc(5.5rem + 0.75vw);
 }
 
 h1::selection,
@@ -211,8 +232,13 @@ h3::selection {
 }
 
 .headings {
-  font-size: calc(1rem + 2vw);
+  font-size: calc(8.5rem + 0.75vw);
+  text-transform: uppercase;
+  /* font-size: calc(1rem + 2vw); */
   text-align: center;
+  font-family: 'ogg', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .width {
