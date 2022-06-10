@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <>
       <footer className="height">
-        <h2 className="headings">Get in <span>touch.</span></h2>
+        <h2 className="headings">Get in <span>touch</span></h2>
         <p id="footer-p">Wanna work together?, have any question or proposal?, or just want to say Hello. Go ahead. I would love to hear from you!</p>
         <form ref={form} onSubmit={sendEmail}>
           <div id="input-flex">

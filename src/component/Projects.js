@@ -8,9 +8,10 @@ const Projects = () => {
   return (
     <>
       <section>
-        <div>
-          <h2 className="headings">Selected <span>Projects</span></h2>
-        </div>
+      <div id="h2-cover">
+        <h2 className="headings">Selected</h2>
+        <h2 className="headings" id="span">Projects</h2>
+      </div>
         <div className="grid-container">
           <div id="grid-column-2">
             <div>

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import gsap from "gsap";
 
 const NavBar = () => {
+
+  // const navRef = useRef(null);
+
+  useEffect(() => {
+    // const navEl = navRef.current;
+    gsap.fromTo('.animation', {y: '-100%', opacity: 0}, {duration: 1, y: '0%', ease: 'power4.inOut', opacity: 1, stagger: .2})
+  }, [])
+
   const links = [
     {
       id: 1,
@@ -29,11 +38,11 @@ const NavBar = () => {
       <header>
         <nav className="nav">
           <div>
-            <h3 className="header-name">Stephanie Ugboaja</h3>
+            <h3 className="header-name animation">Stephanie Ugboaja</h3>
           </div>
           <ul className="header-ul">
             {links.map((link) => (
-              <li key={link.id}>
+              <li className="animation" key={link.id}>
                 <NavLink to={link.path} exact>{link.text}</NavLink></li>
             ))}
           </ul>

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap');
 
 :root {
   --black: #28282a;
@@ -122,7 +124,8 @@ header {
 }
 
 .header-name{
-  font-weight: 600;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 500;
   /* Mobile Text
   font-size: calc(1.5rem + 1vw); */
   font-size: calc(0.75rem + 0.75vw);
@@ -150,7 +153,8 @@ header {
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
-  font-weight: 600;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 500;
   font-size: calc(0.75rem + 0.75vw);
 }
 
@@ -187,10 +191,6 @@ h1 {
   font-weight: 500;
   font-size: calc(6.5rem + 0.75vw);
   /* width: calc(2em * 5); */
-}
-
-span {
-  color: var(--textCover);
 }
 
 #main-p {
@@ -231,6 +231,12 @@ h3::selection {
   align-items: center;
 }
 
+#h2-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .headings {
   font-size: calc(8.5rem + 0.75vw);
   text-transform: uppercase;
@@ -239,6 +245,19 @@ h3::selection {
   font-family: 'ogg', sans-serif;
   letter-spacing: 2px;
   font-weight: 400;
+  /* width: calc(2em * 2); */
+}
+
+span {
+  color: var(--textCover);
+  /* font-size: calc(5.5rem + 0.75vw); */
+}
+
+#span {
+  color: var(--textCover);
+  font-size: calc(5.5rem + 0.75vw);
+  width: calc(3em * 2.5);
+  text-align: end;
 }
 
 .width {
@@ -316,6 +335,7 @@ footer {
 
 p {
   /* font-size: clamp(1em, 0.75rem + 0.5vw, 1.2em); */
+  font-family: 'Arimo', sans-serif;
   font-weight: 400;
   font-size: calc(0.4rem + 1vw);
 }
@@ -331,6 +351,8 @@ p {
 form {
   display: flex;
   flex-direction: column;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 500;
   /* justify-content: center;
   align-items: center; */
 }
@@ -349,7 +371,8 @@ form {
 }
 
 label {
-  font-weight: 400;
+  font-weight: inherit;
+  font-family: inherit;
   padding-block-end: 0.5rem;
 }
 
@@ -363,6 +386,8 @@ label {
   background-color: transparent;
   width: calc(17.5rem + 3vw);
   font-size: calc(0.3rem + 1vw);
+  font-weight: inherit;
+  font-family: inherit;
 }
 
 #name:focus,
@@ -397,6 +422,8 @@ button {
   text-align: center;
   text-transform: uppercase;
   color: var(--buttonColor);
+  font-weight: inherit;
+  font-family: inherit;
 }
  
 button::before {
