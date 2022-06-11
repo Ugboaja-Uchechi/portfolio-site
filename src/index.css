@@ -242,7 +242,7 @@ h3::selection {
   text-transform: uppercase;
   /* font-size: calc(1rem + 2vw); */
   text-align: center;
-  font-family: 'ogg', sans-serif;
+  font-family: 'ogg', Helvetica, sans-serif;
   letter-spacing: 2px;
   font-weight: 400;
   /* width: calc(2em * 2); */

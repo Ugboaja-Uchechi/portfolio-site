@@ -18,7 +18,7 @@ const About = () => {
         <h2 className="headings about-animation">About <span>me</span></h2>
         <div className="about about-animation">
           <div className="margin-end">
-            <p className="width about-animation">Hi, I'm Stephanie.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, quasi quos. Dolores optio voluptatem perspiciatis saepe soluta amet iure laudantium eum! Aut voluptate odio ducimus consequuntur incidunt culpa iusto placeat. Doloribus ut, alias quasi ipsa repudiandae recusandae commodi nihil? Possimus dolorem aliquam quos tempora architecto aut non voluptates commodi repellendus voluptas atque ratione placeat consequuntur soluta minima, molestias libero. Minus!Ad, dignissimos incidunt voluptatibus, atque sapiente quas aperiam illo provident ut rerum laboriosam, exercitationem cum veniam. Error eius magni, omnis veritatis eligendi nam inventore expedita saepe vitae labore repellat dolorum!
+            <p className="width about-animation">Hi there!, I'm Stephanie a software developer. For as long as I can remember I have always wanted to work in the tech industry. Since then, I've been honing my skills to make sure I get better at what I love doing. Years later, I decided to enroll in a boot-camp called Microvere and spent about a year learning about how to create the web through remote pair-programming with people from across the world. Through these experiences, I've had the opportunity to create memorable products, and, meet people with various experiences which has helped raise my standards and help me grow as a developer and as a person.
             </p>
           </div>
           <div>

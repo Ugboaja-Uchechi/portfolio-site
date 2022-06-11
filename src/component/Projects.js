@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import VacayImage from "../images/vacay.png";
 import SpaceImage from "../images/space-x.png";
 import IpImage from "../images/ip-tracker.png";
 import UrlImage from "../images/url-shortening.png";
+import gsap from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const Projects = () => {
+
+  useEffect(() => {
+    // const navEl = navRef.current;
+    gsap.fromTo('.headings', {opacity: 0, y: '-10%'}, {duration: 2, ease: 'power4.inOut', opacity: 1, y: '0%', delay: .1, scrollTrigger: { trigger: '.headings'
+    }})
+  }, [])
+
   return (
     <>
       <section>
