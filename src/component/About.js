@@ -8,7 +8,7 @@ const About = () => {
 
   useEffect(() => {
     // const navEl = navRef.current;
-    gsap.fromTo('.about-animation', {opacity: 0, y: '-10%'}, {duration: 1, ease: 'power4.inOut', opacity: 1, y: '0%', stagger: .2, delay: .1, scrollTrigger: { trigger: '.about-animation'
+    gsap.fromTo('.about-animation', {opacity: 0, y: '-10%'}, {duration: 0.5, ease: 'power4.inOut', opacity: 1, y: '0%', stagger: .2, scrollTrigger: { trigger: '.about-animation'
     }})
   }, [])
 
