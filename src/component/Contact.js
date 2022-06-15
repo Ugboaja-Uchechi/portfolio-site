@@ -30,7 +30,7 @@ const Contact = () => {
 
   useEffect(() => {
     // const navEl = navRef.current;
-    gsap.fromTo('.contact-animation', {opacity: 0, y: '-10%'}, {duration: 1, ease: 'power4.inOut', opacity: 1, y: '0%', stagger: .25, scrollTrigger: { trigger: '.contact-animation'
+    gsap.fromTo('.contact-animation', {opacity: 0, y: '-10%'}, {duration: 0.8, ease: 'power4.inOut', opacity: 1, y: '0%', stagger: .25, scrollTrigger: { trigger: '.contact-animation'
     }})
   }, [])
 

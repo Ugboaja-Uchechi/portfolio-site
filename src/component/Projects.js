@@ -29,6 +29,10 @@ const Projects = () => {
                 <h3 className="project-title">Vacay Home</h3>
                 <p>Vacay home is a rental site built with React, Ruby on Rails, Bootstrap, Jest, and CSS in which users can create reservations for vacation homes and create listings.</p>
               </div>
+              <div className="project-link-cover">
+                <a href="https://github.com/Ugboaja-Uchechi/Vacayhome-front-end" target="_blank" rel="noreferrer">View GitHub</a>
+                <a href="https://vacay-home.netlify.app/" target="_blank" rel="noreferrer">Live Project</a>
+              </div>
               <div id="img">
               </div>
             </div>
@@ -38,6 +42,10 @@ const Projects = () => {
               <div className="content">
                 <h3 className="project-title">Space Traveler's Hub</h3>
                 <p>Space Traveler's Hub is a desktop web application built with React, Bootstrap, Jest, and, CSS that allow users to book rockets and join selected space missions.</p>
+              </div>
+              <div className="project-link-cover">
+                <a href="https://github.com/Ugboaja-Uchechi/space-x-hub" target="_blank" rel="noreferrer">View GitHub</a>
+                <a href="https://space-x-hub.netlify.app/" target="_blank" rel="noreferrer">Live Project</a>
               </div>
               <div id="img-2">
               </div>
@@ -49,6 +57,10 @@ const Projects = () => {
                 <h3 className="project-title">IP Address Tracker</h3>
                 <p>IP Address Tracker is a web applcation built with JavaScript, Api, HTML, and, CSS. Users can see their IP Address on the map on the initial page load. Search for any IP addresses or domains and see the key information and location. View the optimal layout for each page depending on their device screen size.</p>
               </div>
+              <div className="project-link-cover">
+                <a href="https://github.com/Ugboaja-Uchechi/ip-address-tracker" target="_blank" rel="noreferrer">View GitHub</a>
+                <a href="https://ip-address-tracker1.netlify.app/" target="_blank" rel="noreferrer">Live Project</a>
+              </div>
               <div id="img-3">
               </div>
             </div>
@@ -58,6 +70,10 @@ const Projects = () => {
               <div className="content">
                 <h3 className="project-title">URL Shortening API</h3>
                 <p>URL Shortening API is a web app built with JavaScript, Api, HTML, and, CSS. Users can shorten any valid URL, see a list of their shortened links, even after refreshing the browser, copy the shortened link to their clipboard in a single click</p>
+              </div>
+              <div className="project-link-cover">
+                <a href="https://github.com/Ugboaja-Uchechi/url-shortener" target="_blank" rel="noreferrer">View GitHub</a>
+                <a href="https://ip-address-tracker1.netlify.app/" target="_blank" rel="noreferrer">Live Project</a>
               </div>
               <div id="img-4">
               </div>
