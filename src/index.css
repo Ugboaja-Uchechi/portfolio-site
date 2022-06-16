@@ -32,7 +32,7 @@
   color: #7A1A8B;
 } */
 
-#light {
+body {
   background-color: var(--lightTheme);
 }
 
@@ -146,7 +146,7 @@ h1 {
   font-family: 'ogg', sans-serif;
   letter-spacing: 2px;
   font-weight: 500;
-  font-size: calc(5.5rem + 0.75vw);
+  font-size: calc(6rem + 0.75vw);
   /* width: calc(2em * 5); */
 }
 
@@ -166,7 +166,7 @@ h1 {
   font-family: 'ogg', sans-serif;
   letter-spacing: 2px;
   font-weight: 500;
-  font-size: calc(4.5rem + 0.75vw);
+  font-size: calc(5rem + 0.75vw);
 }
 
 h1::selection,
@@ -258,13 +258,12 @@ span {
 #grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(410px,1fr));
-  grid-column-gap: 60px;
-  grid-row-gap: 60px;
+  column-gap: 60px;
+  row-gap: 60px;
 }
 
 .project-div {
-  height: 650px;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   padding: 0 20px;
 }
@@ -272,19 +271,24 @@ span {
 #div-1 {
   background-color: #ccd5ae;
   margin-top: 130px;
+  height: 630px;
 }
 
 #div-2 {
   background-color: #f4a261;
+  height: 600px;
+  margin-block-start: 30px;
 }
 
 #div-3 {
   background-color: #94d2bd;
+  height: 680px;
 }
 
 #div-4 {
   background-color: #f8ad9d;
   margin-top: -130px;
+  height: 650px;
 }
 
 .content {
@@ -296,6 +300,7 @@ span {
 #img {
     position: relative;
     left: -70px;
+    top: 20px;
     width: 108%;
     height: 100%;
     background-image: url(./images/vacay.png);
@@ -306,6 +311,8 @@ span {
 #img-2 {
   width: 100%;
   height: 100%;
+  position: relative;
+  top: 20px;
   background-image: url(./images/space-x.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -314,6 +321,8 @@ span {
 #img-3 {
   width: 110%;
   height: 100%;
+  position: relative;
+  top: 20px;
   background-image: url(./images/ip-tracker.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -324,6 +333,7 @@ span {
   width: 100%;
   max-width: 650px;
   height: 100%;
+  top: 20px;
   background-image: url(./images/url-shortening.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -368,6 +378,30 @@ span {
 
 .project-title {
   font-size: calc(0.8rem + 1vw);
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+}
+
+.project-link-cover {
+  margin-inline-start: 1.3rem;
+}
+
+.project-links {
+  background-color: #f5ebe0;
+  border-radius: 5px;
+  color: black;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: clamp(1em, 0.75rem + 0.5vw, 1.1em);
+}
+
+.project-links:first-child {
+  margin-inline-end: 0.8rem;
+}
+
+.project-links:hover {
+  cursor: pointer;
+  background-color: #8ecae6;
 }
 
 img {
@@ -548,11 +582,12 @@ button:focus {
   position: fixed;
   display: inline-block;
   top: 1.7em;
-  right: 5em;
+  right: 4em;
   width: 3.5em;
   height: 2em;
   transition: .7s ease;
   z-index: 4;
+  display: none;
 }
   
   /* Hide default HTML checkbox */
@@ -692,6 +727,50 @@ input:checked + .slider:before {
 /* Dark Theme Styling End */
 
 /* Media Queries */
+
+@media screen and (min-device-width: 730px) and (max-device-width: 960px) {
+
+  .headings {
+    font-size: calc(4.5rem + 0.75vw);
+  }
+
+  #span {
+    font-size: calc(4rem + 0.75vw);
+    width: calc(2.9em * 2);
+  }
+
+  .switch {
+    top: 1.5em;
+    right: 1em;
+  }
+
+  #grid-container {
+    row-gap: 20px;
+  }
+
+  #div-1 {
+    height: 555px;
+  }
+
+  #div-2 {
+    height: 530px;
+    margin-block-end: 30px;
+  }
+
+  #div-3 {
+    margin-block-end: 10rem;
+    height: 580px;
+  }
+
+  #div-4 {
+    height: 553px;
+  }
+
+  /* .grid4 {
+    margin-block-end: 3rem;
+  } */
+}
+
 
 @media screen and (min-device-width: 1470px) and (max-device-width: 1889px) {
   #grid-container {
