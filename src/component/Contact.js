@@ -4,16 +4,23 @@ import gsap from "gsap";
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
 
-const Result = () => {
-  return (
-    <p>Your message has been successfully sent.</p>
-  )
-}
+// const Result = () => {
+//   return (
+//     <div className="popup-cover">
+//       <i class="fa-solid fa-xmark x-icon"></i>
+//       <p>Your message has been successfully sent.</p>
+//     </div>
+//   )
+// }
 
 const Contact = () => {
 
   const [result, showResult] = useState(false)
   const form = useRef();
+
+  const Result = () => {
+    showResult(!result)
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -57,9 +64,15 @@ const Contact = () => {
           <div className="textarea-flex">
             <button type="submit" className="grid4 contact-animation">Send a Message</button>
           </div>
-          <div>
+          {result && (
+                <div className="popup-cover">
+                <i class="fa-solid fa-xmark x-icon" onClick={Result}></i>
+                <p>Your message has been successfully sent.</p>
+              </div>
+          )}
+          {/* <div>
            {result ? <Result /> : null}
-          </div>
+          </div> */}
         </form>
       </footer>
     </>

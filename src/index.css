@@ -110,6 +110,23 @@ header {
 
 /* Header - Navigation Styling End */
 
+/* Shape */
+
+/* .main-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle-shape {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-block: 15px solid black;
+  border-inline: 15px solid black;
+  transform: scale(1.5);
+} */
+
 /* Main Styling */
 
 #main {
@@ -145,7 +162,7 @@ h1 {
 #main-p2 {
   text-align: end;
   /* margin-block-start: 2rem; */
-  margin-inline-end: 3rem;
+  margin-inline-end: 5rem;
   font-family: 'ogg', sans-serif;
   letter-spacing: 2px;
   font-weight: 500;
@@ -493,6 +510,36 @@ button:focus {
 }
  
 /* Contact Styling End */
+
+/* Form Pop-up */
+
+.popup-cover {
+  position: relative;
+  top: -15rem;
+  left: 10rem;
+  background-color: #94d2bd;
+  color: var(--darkTheme);
+  height: 10rem;
+  margin: 0 3rem;
+  width: calc(5em * 5);
+  border-radius: 10px;
+}
+
+.popup-cover p {
+  padding: 2rem 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.x-icon {
+  display: grid;
+  justify-content: end;
+  padding-block-start: 1rem;
+  margin-inline-end: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Form Pop-up End */
 
 /* Theme Switcher */
 
