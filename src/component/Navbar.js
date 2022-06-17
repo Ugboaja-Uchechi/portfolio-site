@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import gsap from "gsap";
 
@@ -33,14 +33,22 @@ const NavBar = () => {
       text: 'contact'
     }
   ];
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  const showNavBar = () => setNavbarOpen(!navbarOpen);
   return (
     <>
       <header>
         <nav className="nav">
           <div>
+            <i class="fa-solid fa-bars" id="menu" onClick={showNavBar}></i>
+          </div>
+          <div>
             <h3 className="header-name animation">Stephanie Ugboaja</h3>
           </div>
-          <ul className="header-ul">
+          <ul className={navbarOpen ? "header-ul active" : "header-ul"}>
+            <div>
+              <i class="fa-solid fa-xmark" id="close" onClick={showNavBar}></i>
+            </div>
             {links.map((link) => (
               <li className="animation" key={link.id}>
                 <NavLink to={link.path} exact>{link.text}</NavLink></li>
