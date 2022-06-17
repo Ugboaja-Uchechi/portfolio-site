@@ -98,12 +98,12 @@ const Projects = () => {
           <div>
             <div id="div-4" className="project-div right-2-animation">
               <div className="content">
-                <h3 className="project-title">URL Shortening API</h3>
-                <p>URL Shortening API is a web app built with JavaScript, Api, HTML, and, CSS. Users can shorten any valid URL, see a list of their shortened links, even after refreshing the browser, copy the shortened link to their clipboard in a single click</p>
+                <h3 className="project-title">Math Magicians</h3>
+                <p>Math Magicians is a web app built with React, CSS, and JavaScript. A calculator site that solves basic math operations which can be accessed on any screen size.</p>
               </div>
               <div className="project-link-cover">
-                <a href="https://github.com/Ugboaja-Uchechi/url-shortener" target="_blank" rel="noreferrer" className="project-links">View GitHub</a>
-                <a href="https://ip-address-tracker1.netlify.app/" target="_blank" rel="noreferrer" className="project-links">Live Project</a>
+                <a href="https://github.com/Ugboaja-Uchechi/math-sorcerer" target="_blank" rel="noreferrer" className="project-links">View GitHub</a>
+                <a href="https://math-sorcerer.netlify.app/calculator" target="_blank" rel="noreferrer" className="project-links">Live Project</a>
               </div>
               <div id="img-4">
               </div>
