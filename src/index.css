@@ -686,11 +686,11 @@ input:checked + .slider:before {
   #menu,
   #close {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #menu {
-    margin-inline-end: 1.5rem;
+    margin-inline-end: 1rem;
     margin-block-start: 25%;
   }
 
