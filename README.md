@@ -1,3 +1,31 @@
+# Portfolio-Site
+
+## live Demo link
+
+[Live Link](https://stephanies-portfolio.netlify.app/)
+
+## Built With
+
+- React
+- Gsap
+- Css
+
+## Author
+
+👤Ugboaja-Uchechi
+
+[GitHub](https://github.com/Ugboaja-Uchechi)
+
+[LinkedIn](https://www.linkedin.com/in/stephanie-ugboaja-930a2a216/)
+
+## 🤝Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page. Show your support
+
+## Give a ⭐️ if you like this project!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
