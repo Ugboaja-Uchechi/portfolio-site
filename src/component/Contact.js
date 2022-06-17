@@ -4,15 +4,6 @@ import gsap from "gsap";
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
 
-// const Result = () => {
-//   return (
-//     <div className="popup-cover">
-//       <i class="fa-solid fa-xmark x-icon"></i>
-//       <p>Your message has been successfully sent.</p>
-//     </div>
-//   )
-// }
-
 const Contact = () => {
 
   const [result, showResult] = useState(false)
