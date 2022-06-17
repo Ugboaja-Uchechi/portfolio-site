@@ -1,13 +1,12 @@
 # Portfolio-Site
 
-## Screenshot
-
-![image](https://user-images.githubusercontent.com/74814780/174406444-4fbecaa1-050f-4704-8b96-40652d766201.png)
-
-
 ## live Demo link
 
 [Live Link](https://stephanies-portfolio.netlify.app/)
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/74814780/174406444-4fbecaa1-050f-4704-8b96-40652d766201.png)
 
 ## Built With
 
