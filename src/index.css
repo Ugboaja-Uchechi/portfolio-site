@@ -884,7 +884,7 @@ input:checked + .slider:before {
 
 }
 
-@media screen and (min-device-width: 730px) and (max-device-width: 960px) {
+@media screen and (min-device-width: 700px) and (max-device-width: 960px) {
 
   .headings {
     font-size: calc(4.5rem + 0.75vw);
