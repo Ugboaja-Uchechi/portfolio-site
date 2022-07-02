@@ -4,6 +4,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import gsap from "gsap";
+import AnimateImage from '../images/port-img.svg'
 
 const Home = () => {
 
@@ -29,6 +30,7 @@ const Home = () => {
         <p id="main-p" className="home-animation">I am a developer, I build websites and bring ideas to life with code</p>
         <div className="main-flex">
           {/* <div className="circle-shape"></div> */}
+          <img src={AnimateImage} alt="" className="home-animation" />
           <p id="main-p2" className="home-animation">Software <br />Developer</p>
         </div>
       </main>
