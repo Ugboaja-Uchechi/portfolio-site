@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import gsap from "gsap";
-
 const NavBar = () => {
 
   // const navRef = useRef(null);
@@ -14,22 +14,22 @@ const NavBar = () => {
   const links = [
     {
       id: 1,
-      path: '/',
+      path: '#main',
       text: 'Home'
     },
     {
       id: 2,
-      path: '/about',
+      path: '#about',
       text: 'about'
     },
     {
       id: 3,
-      path: '/projects',
+      path: '#projects',
       text: 'projects'
     },
     {
       id: 4,
-      path: '/contact',
+      path: '#contact',
       text: 'contact'
     }
   ];
@@ -51,7 +51,8 @@ const NavBar = () => {
             </div>
             {links.map((link) => (
               <li className="animation" key={link.id}>
-                <NavLink to={link.path} exact>{link.text}</NavLink></li>
+                <Link to={link.path} exact smooth>{link.text}</Link>
+              </li>
             ))}
           </ul>
         </nav>

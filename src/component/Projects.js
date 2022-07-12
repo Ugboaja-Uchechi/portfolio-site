@@ -47,7 +47,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className="project-section">
+      <section id="projects" className="project-section">
         <div id="h2-cover">
           <h2 className="headings first-head">Selected</h2>
           <h2 className="headings" id="span">Projects</h2>

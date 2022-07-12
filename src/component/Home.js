@@ -26,8 +26,8 @@ const Home = () => {
     </div>
       <main id="main">
         {/* <h1>Hi &#x1f44b;, I'm Stephanie. <span>A Front-End Developer</span></h1> */}
-        <h1 className="home-animation">Stephanie <br />Ugboaja</h1>
-        <p id="main-p" className="home-animation">I am a developer, I build websites and bring ideas to life with code</p>
+            <h1 className="home-animation">Stephanie <br />Ugboaja</h1>
+            <p id="main-p" className="home-animation">I am a developer, I build websites and bring ideas to life with code</p>
         <div className="main-flex">
           {/* <div className="circle-shape"></div> */}
           <img src={AnimateImage} alt="" className="home-animation" />
@@ -40,30 +40,5 @@ const Home = () => {
     </>
   )
 }
-
-// const animateShape = () => {
-//   const infiniteTl = gsap.timeline({
-//     repeat: -1,
-//   });
-//   infiniteTl
-//   .to(".circle-shape", {
-//     duration: 6,
-//     x: 80,
-//     y: -50,
-//     ease: "expo.easeOut",
-//   })
-//   .to(".circle-shape", {
-//     duration: 6,
-//     x: 50,
-//     y: 50,
-//     ease: "expo.easeOut",
-//   })
-//   .to(".circle-shape", {
-//     duration: 4,
-//     x: 70,
-//     y: -50,
-//     ease: "expo.easeOut",
-//   });
-// }
 
 export default Home;

@@ -15,7 +15,7 @@ const About = () => {
 
   return (
     <>
-      <section>
+      <section id="about">
         <h2 className="headings about-animation m-block">About <span>me</span></h2>
         <div className="about">
           <div>

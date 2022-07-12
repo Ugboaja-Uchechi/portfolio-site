@@ -14,6 +14,10 @@
   --spanDarkThemeTextColor: #fcbf49;
 }
 
+::selection {
+  background-color: var(--lightSelection);
+}
+
 @font-face {
   font-family: ogg;
   src: url(font/OggMedium.ttf);
@@ -33,6 +37,7 @@
 
 body {
   background-color: var(--lightTheme);
+  overflow-x: hidden;
 }
 
 /* Header - Navigation Styling */
@@ -168,14 +173,6 @@ h1 {
   letter-spacing: 2px;
   font-weight: 500;
   font-size: calc(5rem + 0.75vw);
-}
-
-h1::selection,
-p::selection,
-span::selection,
-a::selection, 
-h3::selection {
-  background-color: var(--lightSelection);
 }
 
 /* Main Styling End */
@@ -711,7 +708,7 @@ input:checked + .slider:before {
   }
 
   #menu {
-    margin-inline-end: 1rem;
+    margin-inline-end: 1.5rem;
     margin-block-start: 25%;
   }
 
@@ -781,6 +778,11 @@ input:checked + .slider:before {
   #main-p2,
   h1 {
     font-size: calc(2.75rem + 0.75vw);
+  }
+
+  .main-flex >img {
+    grid-column: 1/3;
+    width: calc(2em * 2);
   }
 
   #main-p2 {
@@ -909,6 +911,10 @@ input:checked + .slider:before {
 
   .headings {
     font-size: calc(4.5rem + 0.75vw);
+  }
+
+  .main-flex >img {
+    grid-column: 1/3;
   }
 
   #span {
